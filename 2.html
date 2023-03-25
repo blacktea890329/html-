@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+	<head>
+	<!--<base href="https://www.youtube.com/">--><!--可輸入網頁前綴 如youtube 這樣後面就可直接打剩下的網頁 不只影響到連結 也會影響到圖片 會影響到一切有關路徑的行為-->
+	<main charset="utf-8">
+	<title>第二個網頁</title>
+	<style>
+		header,footer{
+		display:block;
+		clear:both;
+		padding:5px;
+		text-align:center
+		}
+		nav{
+		display:block;
+		float:left;
+		width:19.4%;
+		hight:50%;
+		background:yellow;
+		padding:5px;
+		}
+		article{
+		display:block;
+		float:right;
+		width:79.5%;
+		hight:50%;
+		background:red;
+		padding:5px;
+		}
+		section{
+		background:(255,255,255);
+		}
+		.note{color:white}
+	</style>
+	</head>
+	<body>
+		<p> <a href="">超連結</a></p>
+	    <p> <a href="watch?v=yZIlqRhCH3w">超連結</a></p><!-- base href = "https://www.youtube.com/" + a href = "watch?v=yZIlqRhCH3w" = "https://www.youtube.com/watch?v=yZIlqRhCH3w"-->
+		<p> <a href="文字格式.html">文字格式</a></p> 
+		<b>粗體字</b><br>
+		<i>斜體字</i><br>
+		<u>有底線</u><br>
+		<ins>有底線</ins><br>
+		<em>強調斜體</em><br>
+		<strong>強調粗體</strong><br>
+		<dfn>定義</dfn><br>
+		<code>程式碼</code><br>
+		<samp>範例</samp><br>
+		<kbd>鍵盤</kbd><br>
+		<var>變數</var><br>
+		<cite>引用</cite><br>
+		<abbr>縮寫</abbr><br>
+		<s>刪除線</s><br>
+		<del>刪除線</del><br>
+		<q>Gone with the wind</q> <!--雙引號--><br>
+		<mark>螢光標記</mark><br>
+		<p><a href="文字樣式與更改字型.html">文字樣式與更改字型</a></p>
+		<p><font size="5" color="red" face="新細明體">準備吃午餐</font></p>
+		<p><font size="10" color="blue" face="新細明體">準備吃午餐</font></p>
+		<p><font size="15" color="black" face="新細明體">準備吃午餐</font></p>
+		<div>
+		<p><marquee bgcolor="blue" width="800" hight="50">安安你好</marquee></p>
+		<p><marquee bgcolor="blue" width="800" hight="50" behavior="alternate" scrollamount="10" scorlldelay="5000">安安你好</marquee></p>
+		</div>
+		<header>
+			<h1 align="left">Hello! world!</h1> <!--最裡面的格式不受到style的設定影響-->
+			<h2 align="right">Hello! Html 5!</h2>
+			<h3 align="center">放在正中間</h3>
+			<h4>第四大的標題</h4>
+			<h5>第五大的標題</h5>
+			<h6>最小的標題</h6>
+		</header>
+		<hr color="	#97CBFF" align="left" size="5">
+		<hr color="	#FF5151" align="left" width="50" size="5">
+		<blockquote>12313214654654</blockquote>
+		<p>12313214654654</p>
+		<dl>
+			<dt>標題區塊</dt>
+			<dd>文章內容 全部寫在這邊	121354687 654654897798
+			654646464 65464654			
+			</dd>
+		</dl>
+		<section >
+			<nav>
+				<ul type="circle" >
+					<li><a href="https://www.google.com.tw">安安</a></li>
+					<li><a href="https://www.youtube.com/">你好</a></li>
+					<li><a href="https://www.twitch.tv/">早安</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul type="circle">
+					<li><a href="#網頁最尾巴">安安</a></li>
+					<li><a href="https://www.youtube.com/">你好</a></li>
+					<li><a href="https://www.twitch.tv/">早安</a></li>
+				</ul>
+			</nav>
+		</section>
+		<article title="這是文章內文">
+			<hgroup>
+				<h1 class="note">html中的標題一</h1>
+				<h2 class="note">html中的標題二</h2>
+				<h3 class="note">html中的標題三</h3>
+				<h4 class="note" >html中的標題四</h4>
+			</hgroup>
+			<section>
+				<h1>section中的標題</h1>
+				<p class="note">section中的段落</p>
+			</section>
+			<pre>
+				123135648798754654
+				454654484898
+				awerwrr
+				qwerqr
+			</pre>
+			<p>
+				123135648798754654
+				454654484898
+				awerwrr
+				qwerqr
+			</p>
+		</article>
+		<figure align="lefe" bgcolor="black">
+			<img src="b.jpg" width="35%" height="35%" bgcolor="black"><br>
+			<figcaption>魔女宅急便</figcaption>
+		</figure>
+		<table border="5" align="center" >
+			<tr bgcolor="white">
+				<th>標題一</th>
+				<th>標題二</th>
+				<th>標題三</th>
+			</tr>
+			<tr bgcolor="black">
+				<td align="center"><img src="https://img.lovepik.com/element/40159/9148.png_300.png"></td>
+				<td align="center"><img src="https://img.lovepik.com/element/40118/6391.png_300.png"></td>
+				<td align="center"><img src="https://img.lovepik.com/element/40118/6391.png_300.png"></td>
+			</tr>
+			<tr bgcolor="blue">
+				<td align="center"><img src="https://img.lovepik.com/element/40159/9148.png_300.png"></td>
+				<td align="center"><img src="https://img.lovepik.com/element/40159/9148.png_300.png"></td>
+				<td align="center"><img src="https://img.lovepik.com/element/40118/6391.png_300.png"></td>
+			</tr>
+			<tr bgcolor="red">
+				<td align="center"><img src="https://img.lovepik.com/element/40118/6391.png_300.png"></td>
+				<td align="center"><img src="https://img.lovepik.com/element/40118/6391.png_300.png"></td>
+				<td align="center"><img src="https://img.lovepik.com/element/40159/9148.png_300.png"></td>
+			</tr>
+		<table border="1">
+			<caption>表格標題</caption>
+			<tr>
+				<th >標題一</th>
+			</tr>
+			<tr>
+				<td>abc</td>
+				<td>def</td>
+				<td>ghi</td>
+			</tr>
+			<tr>
+				<td>123</td>
+				<td>456</td>
+				<td>789</td>
+			</tr>
+			<tr>
+				<td>xyz rst jqk</td>
+
+			</tr>
+		</table>
+		<table border="1">
+			<caption>表格標題</caption>
+			<tr>
+				<th colspan="3">標題一</th>
+			</tr>
+			<tr>
+				<td rowspan="2">abc <br>123</td>
+				<td>def</td>
+				<td>ghi</td>
+			</tr>
+			<tr>
+				<td>456</td>
+				<td>789</td>
+			</tr>
+			<tr>
+				<td colspan="3">xyz rst jqk</td>
+			</tr>
+		</table>
+		<footer title="網頁的最尾">		
+
+			<a name="網頁最尾巴">網頁最尾巴</a>
+			<address>
+				<p title="歡迎聯絡">歡迎與我們聯絡</p>
+			</address>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+	<head>
+		<main charset="utf-8">
+		<!--<meta http-equiv="refresh" content="5;url=https://www.youtube.com/"> 定時重整 或是定時導向其他網頁-->
+		<title>營收</title>
+		<!--<style>
+			th {
+				color:gray;
+				font-size:30px;
+				font-family:新細明體
+			}
+			tr {
+				color:green;
+				font-size:20px;
+				font-family:新細明體
+			}
+			h1{
+				color:blue;
+				font-size:80px
+			}
+			i{
+				color:red;
+				font-size:32px
+			}
+			h1 i{
+				color:green;
+				font-size:100px
+			}
+			.normal{
+				color:gray;
+				font-size:15px
+			}
+			.ex{
+				color:pink;
+				font-size:10px
+			}
+			#re{
+				font-size:50px;
+				color:purple
+			}
+			#out{
+				font-size:40px;
+				color:blue
+			}
+			a:link		{color:black}<!--連結 https://www.wibibi.com/info.php?tid=CSS_a_%E9%80%A3%E7%B5%90%E6%A8%A3%E5%BC%8F%E6%95%88%E6%9E%9C%E8%A8%AD%E8%A8%88-->
+			<!--a:visited	{color:green}--><!--造訪過-->
+			<!--a:hover		{color:blue}--><!--被游標指的時候-->
+			<!--a:focus		{color:red}--><!--剛剛按過-->
+			<!--a:active	{color:yellow}--><!--按下去-->
+			<!--</style>-->
+		<!--利用絕對與相對位置導入外部檔案-->
+		<!--<style>
+		 @import url("body.css")
+		</style>-->
+		<!--
+		a:link {
+　			//設定還沒瀏覽過的連結樣式
+		}
+		a:visited {
+		　//設定已經瀏覽過的連結樣式
+		}
+		a:hover {
+		　//設定滑鼠移到連結上的樣式
+		}
+		a:active {
+		　//設定正在被點選的連結樣式
+		}-->
+		<link rel="stylesheet" href="body.css" type="text/css"><!--利用連結的方式導入外部檔案-->
+	</head>
+	<body>
+		<table border="1" >
+		<colgroup span="3" bgcolor="#f08080">
+		</colgroup>
+		<colgroup span="2" bgcolor="#1e90ff">
+		</colgroup>
+		<thead>
+			<tr>
+				<th rowspan="2">&nbsp;</th>
+				<th colspan="2">101年</th>
+				<th colspan="2">102年</th>
+			</tr>
+			<tr>
+				<th>收益(百萬)</th>
+				<th>純益(百萬)</th>
+				<th>收益(百萬)</th>
+				<th>純益(百萬)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>中興</td>
+				<td style=color:red;>3953</td>
+				<td style=color:red;>1245</td>
+				<td style=color:red;>3687</td>
+				<td style=color:red;>763</td>
+			</tr>
+			<tr>
+				<td>飛瑞</td>
+				<td style=color:red;>5193</td>
+				<td style=color:red;>1420</td>
+				<td style=color:red;>4143</td>
+				<td style=color:red;>932</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="5">註:年度營收為各公司結算資料，實際數字依財務公告為準</td>
+			</tr>
+		</tfoot>
+		</table>
+		<!--嵌入其他網站-->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/uJWmDYH8Pyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/6oSra0caaeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<h1>個人資料
+			<i>h1內部的i</i>
+		</h1>
+		<i>外部的i</i>
+		<p class="normal">class normal</p>
+		<p class="ex">ex</p>
+		<p class="ex">ex</p>
+		<!--製作表單-->
+		<form method="post" action="mailto:zu00783847@gmail.com" > <!--寄送資料到指定email-->
+			<fieldset>
+				<p class="ex">ex</p>
+				<p class="ex">ex</p>
+				<p class="ex">ex</p>
+				<legend>個人資料</legend>
+				姓名:<label><input type="text" size="61" name="name" placeholder="請輸入姓名" value=""></label>
+				<br>
+				<br>
+				Email:<label><input type="email" size="60" name="email" placeholder="abc123456789@mail.com.tw"></label><!--辨識輸入是否為email-->
+				<br>
+				<label><input type="radio" name="sex" value="men">男</label>
+				<label><input type="radio" name="sex" value="women">女</label>
+				<br>
+				出生年月日
+				<label><input type="date"></label>
+				<br>
+				請輸入身分證字號
+				<input type="password" name="password">
+				<br>
+				<input type="hidden" name="level" value="5">
+				興趣
+				<label><input type="checkbox" name="hobbit[]" value="play_ball" checked>打球</label>
+				<label><input type="checkbox" name="hobbit[]" value="movie">看電影</label>
+				<label><input type="checkbox" name="hobbit[]" value="music">聽音樂</label>
+				<label><input type="checkbox" name="hobbit[]" value="game">打電動</label>
+				<label><input type="checkbox" name="hobbit[]" value="book">看書</label>
+				<label><input type="checkbox" name="hobbit[]" value="climb">爬山</label>
+				<br>	
+			</fieldset>
+			<fieldset>
+				<p class="normal">class normal</p>
+				<p class="normal">class normal</p>
+				<p class="normal">class normal</p>
+				<p class="normal">class normal</p>
+				<p class="normal">class normal</p>
+				<legend>相關問題</legend>
+				請輸入意見:
+				<br>
+				<textarea name="advence" cols="60" rows="5" value=""></textarea>
+				<br>
+				方便聯絡時間
+				<select name="time[]" size"8">
+					<label><option value="">請選擇時段</label>
+					<optgroup label="時段">
+					<label><option value="day">早上</label>
+					<label><option value="noon">中午</label>
+					<label><option value="night">晚上</label>
+				</select>
+				<br>
+				<input type="number" min="0" max="100" step="1">
+				<br>
+				<input type="range" name="like" value="5" min="1" max="100" oninput="like.value = like.value">
+				<output  name="like"></output>
+				<br>
+				<input type="color">
+				<br>
+				<input type="submit" value="送出" id="out"/>
+				<input type="reset" value="重新輸入" id="re"/>
+			</fieldset>
+			<br>
+			<i>外部的i</i>
+		</form>
+		<br>
+		<form onsubmit="return false" oninput="sum.value = num1.valueAsNumber + num2.valueAsNumber">
+			<input name="num1" type="number" step="any" value="0">+
+			<input name="num2" type="number" step="any" value="0">=
+			<output name="sum"></output>
+			<br>
+			<input type="range" name="weight" id="range_weight" value="5" min="1" max="100" oninput="range_weight_disp.value = range_weight.value">
+			重量:<output  id="range_weight_disp"></output>Kg
+			<br>
+			<input type="range" name="like" value="5" min="1" max="100" oninput="l.value = like.value">
+			<output  name="l"></output>
+			<br>
+			<i>外部的i</i>
+		</form>
+		<p><a href="https://www.youtube.com/watch?v=8R_cM_WUANU" target="_blank">影片一</a></p>
+		<p><a href="https://www.youtube.com/watch?v=114rLOEB4fc" target="_blank">影片二</a></p>
+		<p><a href="https://www.youtube.com/watch?v=Ffmr4EE3-E4" target="_blank">影片三</a></p>
+		<p><a href="https://www.youtube.com/watch?v=3cnuBky49nw" target="_blank">影片四</a></p>
+		<p><a href="https://www.youtube.com/watch?v=MT42lIx47a8" target="_blank">影片五</a></p>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+	th {
+		color:gray;
+		font-size:30px;
+		font-family:新細明體
+	}
+	tr {
+		color:green;
+		font-size:20px;
+		font-family:新細明體
+	}
+	h1{
+		color:blue;
+		font-size:80px
+	}
+	i{
+		color:red;
+		font-size:32px
+	}
+	h1 i{
+		color:green;
+		font-size:100px
+	}
+	.normal{
+		color:gray;
+		font-size:15px
+	}
+	.ex{
+		color:pink;
+		font-size:10px
+	}
+	#re{
+		font-size:50px;
+		color:purple
+	}
+	#out{
+		font-size:40px;
+		color:blue
+	}
+	a:link		{color:black}
+	a:visited	{color:green}
+	a:hover		{color:blue}
+	a:focus		{color:red}
+	a:active	{color:yellow}

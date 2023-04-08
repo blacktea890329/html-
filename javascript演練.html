@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第一個js程式</title>
+		<script>
+			/*var x=prompt("請輸入0-100的數字","");
+			if(x>=90){
+				alert("優");
+			}
+			else if(x>=80){
+				alert("甲");
+			}
+			else if(x>=70){
+				alert("乙");
+			}
+			else if(x>=60){
+				alert("丙");
+			}
+			else{
+				alert("丁");
+			}*/
+		</script> 
+		<script>
+			/*var h=prompt("請輸入身高(cm)","");
+			var w=prompt("請輸入體重(kg)","");
+			var bmi=0;
+			h=h/100.0;
+			console.log(h);
+			h=h*h;
+			console.log(h);
+			bmi=w/h;
+			console.log(h);
+			console.log(w);
+			console.log(bmi);
+			var word="您的bmi值為"+bmi;
+			alert(word);
+			switch(true){
+				case bmi<18.5:
+					alert("過輕");
+					break;
+				case bmi >= 18.5 && bmi < 24:
+					alert("標準");
+					break;
+				case bmi >= 24 && bmi < 27:
+					alert("過重");
+					break;
+				case bmi >=27 && bmi<30:
+					alert("輕度肥胖");
+					break;
+				case bmi >= 30 && bmi<35:
+					alert("中度肥胖");
+					break;
+				case bmi >=35:
+					alert("重度肥胖");
+					break;
+			}*/
+		</script>
+		<script>
+			/*var x= prompt("請輸入正整數","");
+			var total=0;
+			for (var i = 1; i <= x; i++)
+			{
+				total = total + i; //也可寫成total+=i			
+				console.log(total);
+			}
+			alert(total)*/
+		</script>
+		<script>
+			/*var x= prompt("請輸入0~10之間的數","");
+			while(x!=6){
+			
+				if(x>6){
+					alert("太大了");
+					x= prompt("請重新輸入0~10之間的數","");
+				}
+				else if(x<6){
+					alert("太小了");
+					x= prompt("請重新輸入0~10之間的數","");
+				}
+			}
+			alert("恭喜答對了!");*/
+		</script>
+		<script>
+			/*var x= prompt("請輸入0~10之間的數","");
+			do{
+				if(x>6){
+					alert("太大了");
+					x= prompt("請重新輸入0~10之間的數","");
+				}
+				else if(x<6){
+					alert("太小了");
+					x= prompt("請重新輸入0~10之間的數","");
+				}
+			}while(x!=6)
+			alert("恭喜答對了!");*/
+		</script>
+		<script>
+			/*var student=new Array("A","B","C");
+			for (var i in student){
+				alert(student[i]);
+			}*/
+		</script>
+		<script>
+			/*for(var Property in location)
+				document.write(Property + ":" + location[Property] + "<br>");*/
+		</script>
+		<script>
+			/*document.write("hight的屬性值為:" + screen.height + "<br>");
+			document.write("width的屬性值為:" + screen.width + "<br>");
+			document.write("availHeight的屬性值為:" + screen.availHeight + "<br>");
+			document.write("availwidth的屬性值為:" + screen.availwidth + "<br>");
+			document.write("colorDepth的屬性值為:"+ screen.colorDepth + "<br>");*/
+		</script>
+		<script>
+			/*for(var Property in navigator)
+				document.write(Property + ":" + navigator[Property] + "<br>");*/
+		</script>
+		<script>
+			/*for(var Property in history)
+				document.write(Property + ":" + history[Property] + "<br>");*/
+		</script>
+		<script>//直接更換網頁內容 不必動到網址也不用連結新的檔案
+			function openDocument()
+			{
+				document.open("text/html");
+				document.write("這是新的html文件");
+				document.close();
+			}
+		</script>
+
+	</head>
+	<body>
+		<h1>這是一個JavaScript程式</h1>
+		<input type="button" value="重新載入" onclick="location.reload()">
+		<input type="button" value="前往youtube" onclick="location.replace('https://www.youtube.com/')"> <!--無法回到上一頁-->
+		<button> <a type="button" href="https://www.youtube.com/">前往youtube</a></button>
+		<input type="button" value="前往youtube" onclick = "location.href='https://www.youtube.com/'"> <!--可以回到上一頁-->
+		<input type="button" value="上一頁" onclick = "history.back()">
+		<input type="button" value="下一頁" onclick = "history.forward()">
+		<input type="button" value="go" onclick = "history.go(1)">
+		<input type="button" value="開啟新文件" onclick = "openDocument()">
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charse="utf-8">
+		<title>練習</title>
+		<script>
+			function showMsg(){
+				var msg = document.getElementById("message");
+				msg.innerHTML = "Hello World!";
+			}
+			function showMsg1(){
+				window.alert('Hello World');
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="顯示訊息" onclick="showMsg();">
+		<input type="button" value="顯示訊息" onclick="window.alert('Hello World');">
+		<input type="button" value="顯示訊息" onclick="showMsg1();">
+		<p id="message"></p>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charse="utf-8">
+		<title>jQuery</title>
+	</head>
+	<body>
+		<form action="" id="forml" name="form1" method="post">
+			<input id="Button1" type="button" onclick="return Button1_click()" value="button" >
+			<div id="div1">
+				Div1<br/>
+				Div1<br/>
+				Div1<br/>
+				Div1<br/>
+			</div>
+			<hr/>
+			<input type="button" id="button2" value="button" >
+			<div id="div2">
+				Div2<br/>
+				Div2<br/>
+				Div2<br/>
+				Div2<br/>
+			</div>
+		</form>
+		
+		<script src="Scripts/jquery-1.11.1.min.js"></script>
+		<script>
+			function Button1_click() {
+				var div1 = document.getElementById('div1');
+				if (div1.style.display == ''){
+					div1.style.display = 'none';
+				}
+				else{
+					div1.style.display = '';
+				}
+			}
+			
+
+			$(function (){
+				$('#button2').click(function(){
+					$('#div2').toggle();
+				});
+			});
+		</script>
+	</body>
+</html>

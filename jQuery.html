@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charse="utf-8">
+		<title>jQuery</title>
+	</head>
+	<body>
+		<form action="" id="forml" name="form1" method="post">
+			<input type="text" id="Text1" name="Text1" value="我是Text1" />
+			<hr/>
+			<input type="button" id="btn1" name="btn1" onclick="return btn1_onclick()" value="傳統作法" >
+			<br/>
+			<input type="button" id="btn2" name="btn2" onclick="return btn2_onclick()" value="精簡一點的做法" >
+			<br/>
+			<input type="button" id="btn3" name="btn3" value="jQuery的作法">
+		</form>
+		
+		<script src="Scripts/jquery-1.11.1.min.js"></script>
+		<script>
+			//傳統作法
+			function btn1_onclick(){
+				window.document.form1.Text1.value = 'ABC';
+			}
+			//精簡作法
+			function btn2_onclick(){
+				document.getElementById('Text1').value = 'ABC';
+			}
+			
+			//jquery
+			$(function (){
+				$('#btn3').click(function(){
+					$('#Text1').val('ABC');
+				});
+			});
+		</script>
+	</body>
+</html>

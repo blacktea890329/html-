@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charse="utf-8">
+		<title>jQuery</title>
+		<style>
+			.d1{
+				background-color: blue;
+				color: white;
+			}
+			.d2{
+				background-color: red;
+				color: black;
+			}
+			.d3{
+				background-color: yellow;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<input id="btn1" type="button" value="改變div1" >
+		<input id="btn2" type="button" value="改變所有div" >
+		<input id="btn3" type="button" value="清除div1樣式" >
+		<input id="btn4" type="button" value="清除全部樣式" >
+		<input id="btn" type="button" value="test" >
+		<br/>
+		<input type="text" name="xyz" value="">
+		<br/>
+		<input type="text" id="test" value="">
+		<div id="text"></div>
+		<div id="div1">
+			Div1<br/>
+			Div1<br/>
+			Div1<br/>
+			Div1<br/>
+		</div>
+		<br/>
+		<div id="div2" subid="1">
+			Div2<br/>
+			Div2<br/>
+			Div2<br/>
+			Div2<br/>
+		</div>
+		<br/>
+		<div id="div3" class="d1">
+			Div3<br/>
+			Div3<br/>
+			Div3<br/>
+			Div3<br/>
+			<p>div3的P的內容</p>
+			<p>div3的P的內容</p>
+			<p>div3的P的內容</p>
+			<p>div3的P的內容</p>
+			<p>div3的P的內容</p>
+		<script src="Scripts/jquery-1.11.1.min.js"></script>
+		<script>
+			$(function (){
+				$("input[name='xyz']").css("border","2px solid red");
+				$('#btn1').click(function(){
+					$('#div1').addClass('d1');
+				})
+				$('#btn2').click(function(){
+					$('div').addClass('d1');
+				})
+				$('#btn3').click(function(){
+					$('#div1').removeClass('d1');
+				})
+				$('#btn4').click(function(){
+					$('div').removeClass('d1');
+				})
+				$("#btn").click(function(){
+					$("input[name = 'xyz']").val("test!!");
+					$("#test").val("test!!");
+					$("div[subid='1']").html("test!!");
+					$("d1").removeClass();
+					$(".d1").addClass("d2");
+					
+					$(".d1  p").addClass("d3");
+				})
+			});
+		</script>
+	</body>
+</html>

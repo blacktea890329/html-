@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <input type="button" id="btn1" name="btn1" value="取得html" /><br>
+    <input type="button" id="btn2" name="btn2" value="設定html"><br>
+    <input type="button" id="btn3" name="btn3" value="取得val"><br>
+    <input type="button" id="btn4" name="btn4" value="設定val"><br>
+    <input type="button" id="btn5" name="btn5" value="取得text"><br>
+    <input type="button" id="btn6" name="btn6" value="設定text"><br>
+
+    <hr />
+    <input type="text" id="txt1" name="txt1" value="我是txt1"><br>
+    <div id="div1"><p>我是div1</p></div>
+
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+	<script>
+		$(function(){
+			var div1=$('#div1');
+			var txt1=$('#txt1');
+			$('#btn1').click(function(){
+				alert(div1.html());
+			});
+			$('#btn2').click(function(){
+				div1.html('<b><i>我在粗體跟斜體標籤裡面</i></b></br>我標籤在外面');
+			});
+			$('#btn3').click(function(){
+				alert(txt1.val());
+			});
+			$('#btn4').click(function(){
+				txt1.val('修改text1的val');
+			});
+			$('#btn5').click(function(){
+				alert(div1.text());
+			});
+			$('#btn6').click(function(){
+				$('i',div1).text('修改某個區域內指定標籤的內容');
+			});
+		});
+	</script>
+</body>
+</html>

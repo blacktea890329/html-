@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        .d1 {
+            background-color: yellow;
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn1" value="f取得div1的背景顏色" />
+    <hr />
+    <div id="div1" class="d1">這是第1個div</div>
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                var bgc = $('#div1').css('background-color');
+                alert(bgc);
+            });
+        });
+    </script>
+</body>
+</html>

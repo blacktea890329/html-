@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        .d1 {
+            background-color: yellow;
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    top:<input type="text" id="txtTop" name="txtTop" value=""><br>
+    left:<input type="text" id="txtLeft" name="txtLeft" value="">
+    <p>我是第1個p</p>
+    <hr />
+    <p>我是第2個p</p>
+    <hr />
+    <p>我是第3個p</p>
+    <hr />
+    <p>我是第4個p</p>
+    <hr />
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            $('p').click(function () {
+                var myOffset = $(this).offset();
+                $('#txtTop').val(myOffset.top);
+                $('#txtLeft').val(myOffset.left);
+                $('#div1').html($(this).html());
+            });
+
+        });
+    </script>
+</body>
+</html>

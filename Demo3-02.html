@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" id="btn1" value="透過css設定Style" />
+    <hr />
+    <div id="div1">這是第1個div</div>
+    <div id="div2">這是第2個div</div>
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                $('#div1').css('background-color', 'yellow');
+                $('#div2').css({ 'background-color': 'pink', 'font-size': '24px', 'color': 'blue' });
+            });
+        });
+    </script>
+</body>
+</html>

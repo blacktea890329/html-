@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        .d1 {
+            background-color: yellow;
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn1" name="btn1" value="取得Table的寬高">
+    <br>
+    <input type="button" id="btn2" name="btn2" value="設定Div的寬高">
+    <br>
+    <span id="span1"></span>
+    <table border="1" id="tbl1">
+        <thead>
+            <tr>
+                <th>h1</th>
+                <th>h2</th>
+                <th>h3</th>
+                <th>h4</th>
+                <th>h5</th>
+                <th>h6</th>
+            </tr>
+            </head>
+        <tbody>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>d2</td>
+                <td>d3</td>
+                <td>d4</td>
+                <td>d5</td>
+                <td>d6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <div id="div1" style="border: 1px solid #000000; width: 438px; height: 30px;">div1</div>
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                var tblWidth = $('#tbl1').width();
+                var tblHeight = $('#tbl1').height();
+                $('#span1').html('Width:' + tblWidth + '<br>Height:' + tblHeight);
+            });
+            $('#btn2').click(function () {
+                $('#div1').width(700);
+                $('#div1').height(200);
+            });
+
+        });
+    </script>
+
+</body>
+</html>

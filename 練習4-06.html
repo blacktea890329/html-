@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <input type="button" id="btn1" name="btn1" value="使用after" /><br />
+    <input type="button" id="btn2" name="btn2" value="使用insertAfter" /><br />
+    <input type="button" id="btn3" name="btn3" value="使用before" /><br />
+    <input type="button" id="btn4" name="btn4" value="使用insertBefore" /><br />
+
+    <hr />
+    <input type="text" id="txt1" name="txt1" value="我是txt1"><br />
+    <div id="div1"><p>我是div1</p></div>
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+	<script>
+		$(function(){
+			var T=$('<a/>').attr('href','http://tw.yahoo.com').attr('target','_blank').text('yahoo');//這串就是<a href='http://tw.yahoo.com', target=_blank>yahoo</a>
+			//加到所指定的標籤後面 但是在同一層
+			$('#btn1').click(function(){
+				$('#div1').afer(T);
+			});
+			$('#btn2').click(function(){
+				T.insertAfter('#div1');
+			});
+			//加到所指定的標籤前面 但是在同一層
+			$('#btn3').click(function(){
+				$('#div1').before(T);
+			});
+			$('#btn4').click(function(){
+				T.insertBefore('#div1');
+			});
+		});
+	</script>
+
+</body>
+</html>

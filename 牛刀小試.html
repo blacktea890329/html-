@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta  charset="utf-8"/>
+	<title>牛刀小試</title>
+	</head>
+	<style type="Text/Css">
+        .iOver {
+            background-Color: yellow;
+            color: blue;
+        }
+
+        .iOut {
+            background-Color: white;
+            color: black;
+        }
+    </style>
+	<body>
+	
+	<label>姓名:<input type="text" id="name" name="name" value="" placeholder="請輸入姓名"/></label></br>
+	
+	<label>電話:<input type="text" id="phone" name="phone" value="" placeholder="請輸入電話" /></label></br>
+	
+	<label>Email:<input type="email" id="email" name="email" value="" placeholder="請輸入Email" /></label></br>
+	
+	興趣:
+	<select name="hobbit[]" id="hobbit" size="1">
+		<label><option>請選擇興趣</label>
+		<label><option value="1">看電影</label>
+		<label><option value="2">運動</label>
+	</select></br>
+	<div name="div1" id="div1">
+		<input type="checkbox" name="">
+		<input type="checkbox" name="">
+		<input type="checkbox" name="">
+		<input type="checkbox" name="">
+		</br>
+	</div>
+	<input type="button" id="btn1" name="btn1" value="送出"/>
+	</body>
+	
+	
+	<script src="Scripts/jquery-1.11.1.min.js"></script>
+	<script>
+        $(function () {
+            $('#btn1').click(function () {
+                if ($('#name').val() == '請輸入姓名') {
+                    alert('請輸入名字!!');
+                }
+				else if($('#email').val() == '') {
+                    alert('請輸入名字!!');
+                }
+				if ($('#phone').val() == '請輸入電話') {
+                    alert('請輸入電話!!');
+                }
+				else if($('#phone').val() == '') {
+                    alert('請輸入電話!!');
+                }
+				if ($('#email').val() == '請輸入Email') {
+                    alert('請輸入Email!!');
+                }
+				else if($('#email').val() == '') {
+                    alert('請輸入Email!!');
+                }
+				else{
+					alert('填寫完畢')
+				}
+            });
+			$('input:text').hover(
+                    function () {
+                        $(this).addClass('iOver');
+                    },
+                    function () {
+                        $(this).removeClass('iOver');
+                        //$(this).addClass('iOut');
+                    }
+                );
+			$('#email').hover(
+                    function () {
+                        $(this).addClass('iOver');
+                    },
+                    function () {
+                        $(this).removeClass('iOver');
+                        //$(this).addClass('iOut');
+                    }
+                );
+        });
+    </script>
+</html>
